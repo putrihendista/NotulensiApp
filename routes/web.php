@@ -5,6 +5,13 @@ use App\Livewire\Undangan;
 use App\Livewire\UndanganLainnya;
 use App\Livewire\UploadUndangan;
 use App\Livewire\Sidebar;
+use App\Livewire\Notulensi;
+use App\Livewire\TindakLanjutNotulensi;
+use App\Livewire\TambahtindakLanjutNotulensi;
+use App\Livewire\DaftarHadir;
+use App\Livewire\TambahAnggota;
+use App\Livewire\BeritaAcara;
+use App\Livewire\UploadDokumen;
 
 Route::get('/', function () {
     return view('welcome');
@@ -14,6 +21,13 @@ Route::get('/undangan', Undangan::class);
 Route::get('/undanganlainnya', UndanganLainnya::class);
 Route::get('/sidebar', Sidebar::class);
 Route::get('/uploadUndangan', UploadUndangan::class);
+Route::get('/notulensi', Notulensi::class);
+Route::get('/tindakLanjut', TindakLanjutNotulensi::class);
+Route::get('/tambahtindakLanjut', TambahtindakLanjutNotulensi::class);
+Route::get('/daftarhadir', DaftarHadir::class);
+Route::get('/tambahanggota', TambahAnggota::class);
+Route::get('/beritaacara', BeritaAcara::class);
+Route::get('/uploaddokumen', UploadDokumen::class);
 
 Route::middleware([
     'auth:sanctum',
