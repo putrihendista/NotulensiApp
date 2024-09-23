@@ -1,5 +1,5 @@
 <div>
-    <div class="bg-blueLight p-8 shadow-lg max-w-full w-full mt-8">
+    <div class="bg-blueLight p-8 shadow-lg max-w-full w-full">
         <form action="#" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="mb-1">

@@ -1,19 +1,33 @@
-<div>
-    <div class="flex justify-between items-center mb-4">
-        <button class="bg-blue ms-4 py-1 px-3 rounded-full w-auto text-white font-semibold mt-8">
-            {{ __(' Tambah') }}
-        </button>
+<div class="max-w-4xl mx-auto mt-4 p-2">
+    <div>
+    <button class="px-4 py-2 bg-blueLight text-white rounded font-semibold mt-4">Tambah</button>
     </div>
-    <div class="max-w-5xl mx-auto mt-10 p-4 bg-blue shadow-lg rounded-lg">
-        <h2 class="text-center font-semibold text-lg mb-4 text-white">Rencana Tindak Lanjut</h2>
-        <table class="min-w-full border-collapse border border-black">
-            <thead class="bg-blueLight">
-                <th class="border border-blueLight py-2 text-white">No</th>
-                <th class="border border-blueLight py-2 text-white">Catatan</th>
-                <th class="border border-blueLight py-2 text-white">Tindak Lanjut</th>
-                <th class="border border-blueLight py-2 text-white">Due Date</th>
-                <th class="border border-blueLight py-2 text-white">PIC</th>
-            </thead>
-        </table>
+<div class="max-w-4xl mx-auto mt-4 p-6 bg-blue rounded-lg shadow-md">
+    <div>
+        <h2 class="text-lg font-bold text-center">Rencana Tindak Lanjut</h2>
     </div>
+
+    <table class="min-w-full bg-white mt-3">
+        <thead>
+            <tr class="bg-blueLight text-white">
+                <th class="w-1/12 py-3">No</th>
+                <th class="w-3/12 py-3">Catatan</th>
+                <th class="w-4/12 py-3">Tindak Lanjut</th>
+                <th class="w-2/12 py-3">Due Date</th>
+                <th class="w-2/12 py-3">PIC</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach($rencanaTindakLanjut as $index => $item)
+            <tr class="border-b">
+                <td class="text-center py-3">{{ $index + 1 }}</td>
+                <td class="text-center py-3">{{ $item['catatan'] }}</td>
+                <td class="text-center py-3">{{ $item['tindak_lanjut'] }}</td>
+                <td class="text-center py-3">{{ $item['due_date'] }}</td>
+                <td class="text-center py-3">{{ $item['pic'] }}</td>
+            </tr>
+            @endforeach
+        </tbody>
+    </table>
+</div>
 </div>

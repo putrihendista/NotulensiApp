@@ -1,5 +1,5 @@
 <div>
-    <div class="bg-blueLight p-8 shadow-lg max-w-full w-full mt-8">
+    <div class="bg-blueLight p-8 shadow-lg max-w-full w-full">
         <h2 class="text-center text-white mt-1 font-semibold">Daftar Hadir Peserta Rapat</h2>
         <form action="#" method="POST" enctype="multipart/form-data">
             @csrf

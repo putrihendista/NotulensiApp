@@ -32,6 +32,11 @@
                 </header>
             @endif
 
+            <!-- Page Sidebar -->
+             <div>
+             {{ $sidebar }}
+             </div>
+
             <!-- Page Content -->
             <main>
                 {{ $slot }}
