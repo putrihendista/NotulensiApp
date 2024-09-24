@@ -39,7 +39,7 @@
                             <td class="py-3 px-6 text-left">{{ $meeting['time'] }}</td>
                             <td class="py-3 px-6 text-left">{{ $meeting['place'] }}</td>
                             <td class="py-3 px-6 text-left">
-                                <button class="bg-blueLight hover:bg-blue-600 text-white py-1 px-3 rounded-md font-semibold">
+                                <button class="bg-blue hover:bg-blue-600 text-white py-1 px-3 rounded-md font-semibold">
                                     Download
                                 </button>
                             </td>

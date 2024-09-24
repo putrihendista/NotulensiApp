@@ -12,6 +12,7 @@ use App\Livewire\DaftarHadir;
 use App\Livewire\TambahAnggota;
 use App\Livewire\BeritaAcara;
 use App\Livewire\UploadDokumen;
+use App\Livewire\HalamanNotulensi;
 
 Route::get('/', function () {
     return view('welcome');
@@ -28,6 +29,7 @@ Route::get('/daftarhadir', DaftarHadir::class);
 Route::get('/tambahanggota', TambahAnggota::class);
 Route::get('/beritaacara', BeritaAcara::class);
 Route::get('/uploaddokumen', UploadDokumen::class);
+Route::get('/halamannotulensi', HalamanNotulensi::class);
 
 Route::middleware([
     'auth:sanctum',
