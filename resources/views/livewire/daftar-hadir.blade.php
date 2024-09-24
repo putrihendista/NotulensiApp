@@ -1,5 +1,11 @@
-<div>
-    <div class="bg-blueLight p-8 shadow-lg max-w-full w-full">
+<div class="flex">
+    <!-- Sidebar -->
+    <div class="w-1/4 p-4 bg-blueLight">
+        @livewire('sidebar')
+    </div>
+    
+    <!-- Konten Utama -->
+    <div class="w-3/4 bg-blueLight p-8 shadow-lg max-w-full ml-4 rounded-md">
         <h2 class="text-center text-white mt-1 font-semibold">Daftar Hadir Peserta Rapat</h2>
         <form action="#" method="POST" enctype="multipart/form-data">
             @csrf
@@ -13,7 +19,7 @@
             </div>
         </form>
         <button type="submit" class="bg-white py-1 px-4 rounded-md w-auto text-blue font-semibold mt-1 mb-1">
-            save
+            Save
         </button>
 
         <div class="overflow-x-auto">
@@ -41,8 +47,8 @@
                 </tbody>
             </table>
         </div>
-            <button class="bg-white py-1 px-3 rounded-md w-auto text-blue font-semibold mt-8">
-                    {{ __(' Tambah Peserta Rapat') }}
-            </button>
+        <button class="bg-white py-1 px-3 rounded-md w-auto text-blue font-semibold mt-8">
+            {{ __(' Tambah Peserta Rapat') }}
+        </button>
     </div>
 </div>

@@ -42,5 +42,5 @@
             <button class="bg-white py-1 px-3 rounded-md w-auto text-blue font-semibold mt-8">
                     {{ __(' Upload Dokumenmu Disini') }}
             </button>      
-    </div>
+        </div>
 </div>
