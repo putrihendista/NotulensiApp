@@ -14,9 +14,9 @@
 
             <!-- Button Container -->
             <div class="flex justify-start mb-6">
-                <button class="bg-blueLight hover:bg-blue-600 text-white py-2 px-4 font-semibold rounded-md">
-                    Upload
-                </button>
+                <a href="/uploadUndangan"  class="bg-blue py-1 px-3 rounded-md w-auto text-white font-semibold">
+                    {{ __('Upload') }}
+                </a>
             </div>
 
             <!-- Table -->

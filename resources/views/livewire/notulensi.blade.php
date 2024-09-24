@@ -57,7 +57,7 @@
             </div>
 
             <div>
-                <a href="#" class="text-black font-semibold">Rencana Tindak Lanjut Klik Disini</a>
+                <a href="/tindakLanjut" class="text-black font-semibold">Rencana Tindak Lanjut Klik Disini</a>
             </div>
         </div> 
     </div>

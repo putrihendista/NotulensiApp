@@ -19,7 +19,7 @@
             <button class="bg-blue text-white py-1 px-3 rounded-md font-semibold mt-8 mb-12 flex items-center justify-between">Download</button>
         </div>
         <div>
-            <a href="#" class="text-black font-semibold">Lihat Undangan Lainnya</a>
+            <a href="/undanganlainnya" class="text-black font-semibold">Lihat Undangan Lainnya</a>
         </div>
     </div>
 </div>

@@ -5,7 +5,7 @@
     </div>
     
     <!-- Konten Utama -->
-    <div class="w-3/4 bg-blueLight p-8 shadow-lg max-w-full ml-4 rounded-md">
+    <div class="w-3/4 bg-blueLight p-8 shadow-lg max-w-full ml-4 rounded-md mt-4">
         <h2 class="text-center text-white mt-1 font-semibold">Daftar Hadir Peserta Rapat</h2>
         <form action="#" method="POST" enctype="multipart/form-data">
             @csrf
@@ -47,8 +47,10 @@
                 </tbody>
             </table>
         </div>
-        <button class="bg-white py-1 px-3 rounded-md w-auto text-blue font-semibold mt-8">
-            {{ __(' Tambah Peserta Rapat') }}
-        </button>
+        <div class="mt-8">
+            <a href="/tambahanggota"  class="bg-white py-1 px-3 rounded-md w-auto text-blue font-semibold">
+                {{ __('Tambah Peserta Rapat') }}
+            </a>
+        </div>
     </div>
 </div>

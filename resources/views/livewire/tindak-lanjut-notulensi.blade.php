@@ -6,7 +6,9 @@
     <!-- Konten Utama -->
     <div class="w-3/4 max-w-4xl mx-auto mt-4 p-2">
         <div>
-            <button class="px-4 py-2 bg-blueLight text-white rounded font-semibold mt-4">Tambah</button>
+            <a href="/tambahtindakLanjut"  class="bg-blue py-1 px-3 rounded-md w-auto text-white font-semibold">
+                {{ __('Tambah') }}
+            </a>
         </div>
         <div class="max-w-4xl mx-auto mt-4 p-6 bg-blue rounded-lg shadow-md">
             <div>
