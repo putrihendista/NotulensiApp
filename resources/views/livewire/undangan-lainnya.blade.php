@@ -13,7 +13,7 @@
             </div>
 
             <!-- Button Container -->
-            <div class="flex justify-start mb-6">
+            <div class="flex justify-start mb-4">
                 <a href="/uploadUndangan"  class="bg-blue py-1 px-3 rounded-md w-auto text-white font-semibold">
                     {{ __('Upload') }}
                 </a>
@@ -23,7 +23,7 @@
             <div class="overflow-x-auto">
                 <table class="min-w-full bg-white border border-gray-200 shadow-lg rounded-lg">
                     <thead>
-                        <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
+                        <tr class="bg-gray-200 text-gray-500 uppercase text-xs leading-normal">
                             <th class="py-3 px-6 text-left">Tanggal</th>
                             <th class="py-3 px-6 text-left">Undangan</th>
                             <th class="py-3 px-6 text-left">Waktu</th>

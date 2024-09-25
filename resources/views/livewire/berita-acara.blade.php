@@ -22,30 +22,32 @@
         </form>
 
         <!-- Tabel -->
-        <div class="border-b-2 mt-4">
-            <table class="min-w-full bg-white border border-gray-200 shadow-lg rounded-lg">
-                <thead class="bg-gray-200">
-                    <tr>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">No</th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Dokumen</th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Keterangan</th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Aksi</th>
-                    </tr>
-                </thead>
-                <tbody class="bg-gray-100 divide-y divide-gray-150">
-                    @foreach($documents as $document)
-                    <tr>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ $loop->index + 1 }}</td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ $document['name'] }}</td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ $document['description'] }}</td>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            <button class="bg-green hover:bg-green-700 text-white font-semibold py-1 px-4 rounded">Edit</button>
-                            <button class="bg-red hover:bg-red-700 text-white font-semibold py-1 px-4 rounded">Hapus</button>
-                        </td>
-                    </tr>
-                    @endforeach
-                </tbody>
-            </table>
+        <div class="overflow-x-auto">
+            <div class="border-b-2 mt-4">
+                <table class="min-w-full bg-white border border-gray-200 shadow-lg rounded-lg">
+                    <thead class="bg-gray-200">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">No</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Dokumen</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Keterangan</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-gray-100 divide-y divide-gray-150">
+                        @foreach($documents as $document)
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ $loop->index + 1 }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ $document['name'] }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ $document['description'] }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <button class="bg-green hover:bg-green-700 text-white font-semibold py-1 px-4 rounded">Edit</button>
+                                <button class="bg-red hover:bg-red-700 text-white font-semibold py-1 px-4 rounded">Hapus</button>
+                            </td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
         </div>
         <div class="mt-4">
             <a href="/uploaddokumen"  class="bg-blue py-1 px-3 rounded-md w-auto text-white font-semibold">

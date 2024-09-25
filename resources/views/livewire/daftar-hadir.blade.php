@@ -22,30 +22,32 @@
             Save
         </button>
 
-        <div class="border-b-2 mt-4">
-            <table class="min-w-full bg-white border border-gray-200 shadow-lg rounded-lg">
-                <thead class="bg-gray-200">
-                    <tr>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">No</th>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Nama</th>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Jabatan</th>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Keterangan</th>
-                    </tr>
-                </thead>
-                <tbody class="bg-gray-100 divide-y divide-gray-150">
-                    @foreach ($peserta as $index => $person)
-                    <tr>
-                        <td class="px-6 py-4 whitespace-nowrap">{{ $index + 1 }}</td>
-                        <td class="px-6 py-4 whitespace-nowrap">{{ $person['nama'] }}</td>
-                        <td class="px-6 py-4 whitespace-nowrap">{{ $person['jabatan'] }}</td>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            <button class="bg-green hover:bg-green-700 text-white font-semibold py-1 px-4 rounded">Hadir</button>
-                            <button class="bg-red hover:bg-red-700 text-white font-semibold py-1 px-4 rounded">Tidak Hadir</button>
-                        </td>
-                    </tr>
-                    @endforeach
-                </tbody>
-            </table>
+        <div class="overflow-x-auto">
+            <div class="border-b-2 mt-4">
+                <table class="min-w-full bg-white border border-gray-200 shadow-lg rounded-lg">
+                    <thead class="bg-gray-200">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">No</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Nama</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Jabatan</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Keterangan</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-gray-100 divide-y divide-gray-150">
+                        @foreach ($peserta as $index => $person)
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">{{ $index + 1 }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">{{ $person['nama'] }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">{{ $person['jabatan'] }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <button class="bg-green hover:bg-green-700 text-white font-semibold py-1 px-4 rounded">Hadir</button>
+                                <button class="bg-red hover:bg-red-700 text-white font-semibold py-1 px-4 rounded">Tidak Hadir</button>
+                            </td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
         </div>
         <div class="mt-4">
             <a href="/tambahanggota"  class="bg-blue py-1 px-3 rounded-md w-auto text-white font-semibold">
