@@ -5,7 +5,7 @@
     </div>
 
     <!-- Konten Utama (Form dan Tabel) -->
-    <div class="w-3/4 p-8 bg-white shadow-lg ml-4 rounded-md mt-4">
+    <div class="w-3/4 max-w-4xl mx-auto p-6 bg-blue-100 rounded-md shadow-md mt-6">
         <form action="#" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="mb-1">

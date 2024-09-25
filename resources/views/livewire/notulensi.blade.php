@@ -6,6 +6,9 @@
 
     <!-- Konten Utama -->
     <div class="w-3/4 max-w-4xl mx-auto p-6 bg-blue-100 rounded-md shadow-md mt-6">
+        <div class="mt-2 mb-4">
+            <a href="/halamannotulensi" class="text-black font-semibold">Lihat Notulensimu Disini</a>
+        </div>
         <!-- Form -->
         <form wire:submit.prevent="submit" class="bg-blueLight p-6 rounded-md shadow-md mb-4">
             <div class="grid grid-cols-1 gap-4">

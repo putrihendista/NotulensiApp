@@ -5,7 +5,7 @@
     </div>
     
     <!-- Konten Utama -->
-    <div class="w-3/4 bg-white p-8 shadow-lg max-w-full ml-4 rounded-md mt-4">
+    <div class="w-3/4 max-w-4xl mx-auto p-6 bg-blue-100 rounded-md shadow-md mt-6">
         <h2 class="text-center text-black mt-1 font-semibold">Daftar Hadir Peserta Rapat</h2>
         <form action="#" method="POST" enctype="multipart/form-data">
             @csrf
