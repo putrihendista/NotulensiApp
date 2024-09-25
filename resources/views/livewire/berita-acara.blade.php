@@ -22,8 +22,8 @@
         </form>
 
         <!-- Tabel -->
-        <div class="mt-4">
-            <table class="min-w-full divide-y divide-gray-200">
+        <div class="border-b-2 mt-4">
+            <table class="min-w-full bg-white border border-gray-200 shadow-lg rounded-lg">
                 <thead class="bg-gray-200">
                     <tr>
                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">No</th>
@@ -39,8 +39,8 @@
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ $document['name'] }}</td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ $document['description'] }}</td>
                         <td class="px-6 py-4 whitespace-nowrap">
-                            <button class="bg-green hover:bg-green-700 text-white font-bold py-1 px-4 rounded">Edit</button>
-                            <button class="bg-red hover:bg-red-700 text-white font-bold py-1 px-4 rounded">Hapus</button>
+                            <button class="bg-green hover:bg-green-700 text-white font-semibold py-1 px-4 rounded">Edit</button>
+                            <button class="bg-red hover:bg-red-700 text-white font-semibold py-1 px-4 rounded">Hapus</button>
                         </td>
                     </tr>
                     @endforeach

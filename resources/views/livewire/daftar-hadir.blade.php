@@ -22,8 +22,8 @@
             Save
         </button>
 
-        <div class="overflow-x-auto">
-            <table class="min-w-full bg-white border mt-1">
+        <div class="border-b-2 mt-4">
+            <table class="min-w-full bg-white border border-gray-200 shadow-lg rounded-lg">
                 <thead class="bg-gray-200">
                     <tr>
                         <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">No</th>
@@ -39,8 +39,8 @@
                         <td class="px-6 py-4 whitespace-nowrap">{{ $person['nama'] }}</td>
                         <td class="px-6 py-4 whitespace-nowrap">{{ $person['jabatan'] }}</td>
                         <td class="px-6 py-4 whitespace-nowrap">
-                            <button class="bg-green hover:bg-green-700 text-white font-bold py-1 px-4 rounded">Hadir</button>
-                            <button class="bg-red hover:bg-red-700 text-white font-bold py-1 px-4 rounded">Tidak Hadir</button>
+                            <button class="bg-green hover:bg-green-700 text-white font-semibold py-1 px-4 rounded">Hadir</button>
+                            <button class="bg-red hover:bg-red-700 text-white font-semibold py-1 px-4 rounded">Tidak Hadir</button>
                         </td>
                     </tr>
                     @endforeach
