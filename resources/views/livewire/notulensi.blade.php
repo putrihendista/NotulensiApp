@@ -34,10 +34,15 @@
 
                 <div>
                     <label for="tipe" class="block text-white font-bold mb-1">Tipe Rapat</label>
-                    <input type="text" id="tipe" wire:model="tipe" placeholder="Masukkan tipe rapat" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <select id="tipe" wire:model="tipe" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="">Pilih Tipe Rapat</option>
+                        <option value="Penting">Kegiatan Khusus</option>
+                        <option value="Sangat Penting">Rutin</option>
+                        <option value="Urgent">Paripurna</option>
+                    </select>
                 </div>
             </div>
-            
+
             <div class="mt-1">
                 <button type="submit" class="bg-blue text-white font-semibold px-4 py-2 rounded-md hover:bg-blue-600">Simpan</button>
             </div>
@@ -62,6 +67,6 @@
             <div>
                 <a href="/tindakLanjut" class="text-black font-semibold">Rencana Tindak Lanjut Klik Disini</a>
             </div>
-        </div> 
+        </div>
     </div>
 </div>
