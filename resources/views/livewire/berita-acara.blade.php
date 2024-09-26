@@ -23,7 +23,7 @@
 
         <!-- Tabel -->
         <div class="overflow-x-auto">
-            <div class="border-b-2 mt-4">
+            <div class="border-b-1 border-r-1 border-l-1 mt-4">
                 <table class="min-w-full bg-white border border-gray-200 shadow-lg rounded-lg">
                     <thead class="bg-gray-200">
                         <tr>

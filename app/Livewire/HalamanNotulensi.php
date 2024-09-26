@@ -12,11 +12,23 @@ class HalamanNotulensi extends Component
         ['name' => 'Cascading IKU Sampai Komponen'],
         ['name' => 'RKT 2025 Politeknik dan AKN'],
         ['name' => 'Asistensi SAKIP Tahun 2024'],
-        // Tambahkan peserta lainnya sesuai kebutuhan
+        // Tambahkan dokumen lainnya sesuai kebutuhan
     ];
-    
+
+    public $search = ''; // Properti untuk pencarian
+
+    public function getFilteredDocumentsProperty()
+    {
+        // Filter dokumen berdasarkan search
+        return array_filter($this->documents, function($document) {
+            return stripos($document['name'], $this->search) !== false;
+        });
+    }
+
     public function render()
     {
-        return view('livewire.halaman-notulensi');
+        return view('livewire.halaman-notulensi', [
+            'filteredDocuments' => $this->filteredDocuments, // Kirim dokumen yang sudah difilter
+        ]);
     }
 }
