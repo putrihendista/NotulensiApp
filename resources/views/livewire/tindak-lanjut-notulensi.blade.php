@@ -23,7 +23,7 @@
                         <th class="w-4/12 py-3">Tindak Lanjut</th>
                         <th class="w-2/12 py-3">Due Date</th>
                         <th class="w-2/12 py-3">PIC</th>
-                        <th class="w-2/12 py-3">Keterangan</th> <!-- Kolom Keterangan -->
+                        <th class="w-2/12 py-3 px-6">Keterangan</th> 
                     </tr>
                 </thead>
                 <tbody>
@@ -35,7 +35,6 @@
                         <td class="text-center py-3">{{ $item['due_date'] }}</td>
                         <td class="text-center py-3">{{ $item['pic'] }}</td>
                         <td class="text-center py-3">
-                            <!-- Button status selesai/belum -->
                             @if($item['status'] === 'selesai')
                             <button wire:click="toggleStatus({{ $index }})" class="bg-green text-white px-2 py-1 rounded-md text-sm font-semibold mr-2">Selesai</button>
                             @else
