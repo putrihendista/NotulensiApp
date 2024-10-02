@@ -26,7 +26,7 @@
                     <input type="text" id="pic" name="pic" class="w-full p-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400">
                 </div>
                 <div class="flex justify-end">
-                    <button type="submit" class="px-4 py-2 bg-white text-blue font-bold rounded-full shadow hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    <button type="submit" class="px-4 py-2 bg-white text-blue font-bold rounded-md shadow hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400">
                         Save
                     </button>
                 </div>

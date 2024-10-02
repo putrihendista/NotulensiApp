@@ -16,7 +16,7 @@
                 <label for="tempat" class="block font-semibold mb-1 text-black">Acara</label>
                 <input type="text" id="tempat" name="tempat" class="w-full p-1 rounded border border-black focus:outline-none focus:ring-2 focus:ring-blue-400">
             </div>
-            <button type="submit" class="bg-blue py-1 px-4 rounded-md w-auto text-white font-semibold mt-1 mb-2">
+            <button type="submit" class="bg-blueLight py-1 px-4 rounded-md w-auto text-white font-semibold mt-1 mb-2">
                 Save
             </button>
         </form>
@@ -25,12 +25,12 @@
         <div class="overflow-x-auto">
             <div class="border-b-1 border-r-1 border-l-1 mt-4">
                 <table class="min-w-full bg-white border border-gray-200 shadow-lg rounded-lg">
-                    <thead class="bg-gray-200">
+                    <thead class="bg-blueLight">
                         <tr>
-                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">No</th>
-                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Dokumen</th>
-                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Keterangan</th>
-                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Aksi</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">No</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">Dokumen</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">Keterangan</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">Aksi</th>
                         </tr>
                     </thead>
                     <tbody class="bg-gray-100 divide-y divide-gray-150">
@@ -50,7 +50,7 @@
             </div>
         </div>
         <div class="mt-4">
-            <a href="/uploaddokumen"  class="bg-blue py-1 px-3 rounded-md w-auto text-white font-semibold">
+            <a href="/uploaddokumen"  class="bg-blueLight py-1 px-3 rounded-md w-auto text-white font-semibold">
                 {{ __('Upload Dokumenmu Disini') }}
             </a>
         </div>

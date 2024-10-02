@@ -25,12 +25,12 @@
         <div class="overflow-x-auto">
             <div class="border-b-1 border-r-1 border-l-1 mt-4">
                 <table class="min-w-full bg-white border border-gray-200 shadow-lg rounded-lg">
-                    <thead class="bg-gray-200">
+                    <thead class="bg-blueLight">
                         <tr>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">No</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Nama</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Jabatan</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Keterangan</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">No</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">Nama</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">Jabatan</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">Keterangan</th>
                         </tr>
                     </thead>
                     <tbody class="bg-gray-100 divide-y divide-gray-150">
