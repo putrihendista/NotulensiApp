@@ -18,7 +18,7 @@
                  <input type="text" id="tempat" name="tempat" class="w-full p-1 rounded border border-black focus:outline-none focus:ring-2 focus:ring-blue-400">
             </div>
         </form>
-        <button type="submit" class="bg-blue py-1 px-4 rounded-md w-auto text-white font-semibold mt-1 mb-1">
+        <button type="submit" class="bg-blueLight py-1 px-4 rounded-md w-auto text-white font-semibold mt-1 mb-1">
             Save
         </button>
 
@@ -36,9 +36,9 @@
                     <tbody class="bg-gray-100 divide-y divide-gray-150">
                         @foreach ($peserta as $index => $person)
                         <tr>
-                            <td class="px-6 py-4 whitespace-nowrap">{{ $index + 1 }}</td>
-                            <td class="px-6 py-4 whitespace-nowrap">{{ $person['nama'] }}</td>
-                            <td class="px-6 py-4 whitespace-nowrap">{{ $person['jabatan'] }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap font-poppins">{{ $index + 1 }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap font-poppins">{{ $person['nama'] }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap font-poppins">{{ $person['jabatan'] }}</td>
                             <td class="px-6 py-4 whitespace-nowrap">
                                 <button class="bg-green hover:bg-green-700 text-white font-semibold py-1 px-4 rounded">Hadir</button>
                                 <button class="bg-red hover:bg-red-700 text-white font-semibold py-1 px-4 rounded">Tidak Hadir</button>
@@ -50,7 +50,7 @@
             </div>
         </div>
         <div class="mt-4">
-            <a href="/tambahanggota"  class="bg-blue py-1 px-3 rounded-md w-auto text-white font-semibold">
+            <a href="/tambahanggota"  class="bg-blueLight py-1 px-3 rounded-md w-auto text-white font-semibold">
                 {{ __('Tambah Peserta Rapat') }}
             </a>
         </div>

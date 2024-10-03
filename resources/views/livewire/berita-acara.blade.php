@@ -36,9 +36,9 @@
                     <tbody class="bg-gray-100 divide-y divide-gray-150">
                         @foreach($documents as $document)
                         <tr>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ $loop->index + 1 }}</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ $document['name'] }}</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ $document['description'] }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 font-poppins">{{ $loop->index + 1 }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 font-poppins">{{ $document['name'] }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 font-poppins">{{ $document['description'] }}</td>
                             <td class="px-6 py-4 whitespace-nowrap">
                                 <button class="bg-green hover:bg-green-700 text-white font-semibold py-1 px-4 rounded">Edit</button>
                                 <button class="bg-red hover:bg-red-700 text-white font-semibold py-1 px-4 rounded">Hapus</button>

@@ -19,17 +19,17 @@
 
                 <div>
                     <label for="ruang" class="block text-white font-bold mb-1">Ruang Rapat</label>
-                    <input type="text" id="ruang" wire:model="ruang" placeholder="Masukkan ruang rapat" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <input type="text" id="ruang" wire:model="ruang" placeholder="Masukkan ruang rapat" class="placeholder-black w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
 
                 <div>
                     <label for="waktu" class="block text-white font-bold mb-1">Waktu</label>
-                    <input type="time" id="waktu" wire:model="waktu" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <input type="time" id="waktu" wire:model="waktu" class="placeholder-black w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
 
                 <div>
                     <label for="surat" class="block text-white font-bold mb-1">Surat Undangan</label>
-                    <input type="text" id="surat" wire:model="surat" placeholder="Masukkan surat undangan" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <input type="text" id="surat" wire:model="surat" placeholder="Masukkan surat undangan" class="placeholder-black w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
 
                 <div>
@@ -43,8 +43,8 @@
                 </div>
             </div>
 
-            <div class="mt-1">
-                <button type="submit" class="bg-blue text-white font-semibold px-4 py-2 rounded-md hover:bg-blue-600">Simpan</button>
+            <div class="mt-2">
+                <button type="submit" class="bg-white text-blue font-semibold px-4 py-2 rounded-md hover:bg-blue-600">Simpan</button>
             </div>
         </form>
 
@@ -61,7 +61,7 @@
             <div class="mb-4 mt-4">
                 <label for="message" class="block text-gray-700 font-medium mb-2">Notulensi</label>
                 <textarea id="message" name="message" rows="4" placeholder="Tulis Hasil Rapat Anda Disini" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-                <button type="submit" class="bg-blue text-white font-semibold px-4 py-2 rounded-md hover:bg-blue-600">Simpan</button>
+                <button type="submit" class="bg-blueLight text-white font-semibold px-4 py-2 rounded-md hover:bg-blue-600">Simpan</button>
             </div>
 
             <div>
