@@ -49,9 +49,12 @@
                 </table>
             </div>
         </div>
-        <div class="mt-4">
-            <a href="/tambahanggota"  class="bg-blueLight py-1 px-3 rounded-md w-auto text-white font-semibold">
+        <div class="mt-4 flex justify-between items-center">
+            <a href="/tambahanggota" class="bg-blueLight py-1 px-3 rounded-md w-auto text-white font-semibold">
                 {{ __('Tambah Peserta Rapat') }}
+            </a>
+            <a href="/halamandaftarhadir" class="text-black font-semibold mr-10">
+             Klik Halaman Daftar Hadir Disini
             </a>
         </div>
     </div>
