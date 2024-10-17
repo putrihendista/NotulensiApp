@@ -33,7 +33,7 @@
                         <td class="text-left py-3 px-4 font-poppins">{{ $item['catatan'] }}</td>
                         <td class="text-left py-3 px-4 font-poppins">{{ $item['tindak_lanjut'] }}</td>
                         <td class="text-center py-3 font-poppins">{{ $item['due_date'] }}</td>
-                        <td class="text-center py-3 font-poppins">{{ $item['pic'] }}</td>
+                        <td class="text-center py-3 font-poppinss">{{ $item['pic'] }}</td>
                         <td class="text-center py-3">
                             @if($item['status'] === 'selesai')
                             <button wire:click="toggleStatus({{ $index }})" class="bg-green text-white px-4 py-1 rounded-md text-sm font-semibold">Selesai</button>
