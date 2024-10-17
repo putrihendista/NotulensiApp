@@ -28,6 +28,10 @@ class User extends Authenticatable
         'email',
         'password',
     ];
+    public function daftarHadir() {
+        return $this->hasMany(DaftarHadir::class, 'id_user');
+    }
+    
 
     /**
      * The attributes that should be hidden for serialization.
